@@ -133,3 +133,20 @@ function isPrime(number) {
 isPrime(1);
 isPrime(2);
 
+// Exercise 13: Sum of Digits
+// Create a function called sumOfDigits that takes a positive integer as a parameter and calculates the sum of its digits. Print the result to the console.
+
+function sumOfDigits(number){
+    if (number < 0 || !Number.isInteger(number)) {
+        console.log("Please enter a positive integer.");
+        return;
+      } 
+    let sum = 0
+    let num = number.toString(); 
+    for (let i = 0; i < num.length; i++) {
+        sum += parseInt(num[i]);
+      }
+      console.log(sum);
+}
+
+sumOfDigits(123)
