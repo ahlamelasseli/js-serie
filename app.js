@@ -62,7 +62,7 @@ maxOfTwo(50, 30);
 maxOfTwo(15, 15);
 
 
-  // Exercise 8: Array Sum
+  //~ Exercise 8: Array Sum
 // Create a function called arraySum that takes an array of numbers as a parameter and prints the sum of those numbers to the console. Use the for...of loop. Call the function with different arrays.
 
 function arraySum(numbers) {
@@ -76,6 +76,24 @@ function arraySum(numbers) {
   arraySum([1, 2, 3, 4, 5]);       
 
   
+//~ Exercise 9: Factorial Without Recursion
+// Create a function called factorial that takes a number as a parameter and prints the factorial of that number to the console. Calculate the factorial without using recursion. Call the function with different numbers.
+
+function factorial(a) {
+    if (a < 0) {
+        console.log("not defined");
+        return
+    }
+    let result = 1
+    for (let i = 2 ; i <= a ; i++){
+        result *= i 
+    }
+    console.log(result);
+    
+}
+factorial(0)
+factorial(5)
+factorial(9)
 
 
 
