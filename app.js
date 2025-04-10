@@ -95,6 +95,15 @@ factorial(0)
 factorial(5)
 factorial(9)
 
+//~ Exercise 10: Vowel Checker
+// Create a function called isVowel that takes a character as a parameter and prints whether the character is a vowel or not to the console. Use an if-else statement. Call the function with different characters.
+function isVowel(n) {
 
+    n == 'a' || n == 'e' || n == 'i' || n == 'o' || n == 'u' ?  console.log(n +" vowel"):
+    console.log(n + " not a vowel");
+    }
+    isVowel('A'); 
+    isVowel('b'); 
+    
 
 
