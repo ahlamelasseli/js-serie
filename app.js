@@ -133,7 +133,7 @@ function isPrime(number) {
 isPrime(1);
 isPrime(2);
 
-// Exercise 13: Sum of Digits
+//~ Exercise 13: Sum of Digits
 // Create a function called sumOfDigits that takes a positive integer as a parameter and calculates the sum of its digits. Print the result to the console.
 
 function sumOfDigits(number){
@@ -150,3 +150,12 @@ function sumOfDigits(number){
 }
 
 sumOfDigits(123)
+
+//~ 14 Create a function called arrayIntersection that takes two arrays as parameters and returns a new array containing the common elements between them.
+function arrayIntersection(first , second) {
+    let intersection = first.filter(element => second.includes(element));
+    return intersection;
+  }
+  
+  console.log(arrayIntersection([1, 2, 3, 4], [3, 4, 5, 6])); 
+  console.log(arrayIntersection([10, 20], [30, 40]));
