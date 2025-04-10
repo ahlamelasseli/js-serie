@@ -159,3 +159,18 @@ function arrayIntersection(first , second) {
   
   console.log(arrayIntersection([1, 2, 3, 4], [3, 4, 5, 6])); 
   console.log(arrayIntersection([10, 20], [30, 40]));
+
+
+  //~ 15 fibonacci sequence
+
+function fibonacci(n) {
+    let b = [0, 1]; 
+
+    for (let i = 2; i <= n; i++) { 
+      b.push(b[i - 1] + b[i - 2]);  
+    }
+  console.log(b);
+    return b;  
+  }
+
+  console.table(fibonacci(8));
