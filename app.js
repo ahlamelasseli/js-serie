@@ -106,4 +106,13 @@ function isVowel(n) {
     isVowel('b'); 
     
 
+//~ Exercise 11: Largest in Array
+// Create a function called largestInArray that takes an array of numbers as a parameter and prints the largest number in the array to the console. Use the Math.max function. Call the function with different arrays.
+function largestInArray(numbers) {
+    let x = Math.max(...numbers)
+    console.log(x);
+    
+}
+largestInArray([5, 12, 8, 21, 7])
+
 
