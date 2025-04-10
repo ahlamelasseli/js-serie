@@ -9,3 +9,9 @@ function greet(name) {
 }
 greet("bunny")
 
+//~ Exercise 2: Sum of Numbers
+// Create a function called sumNumbers that takes an array of numbers as a parameter and returns the sum of those numbers. Call the function with different arrays.
+function sumNumbers(numbers) {
+    return numbers.reduce((e, c) => e + c, 0);
+  }
+  console.log(sumNumbers([1, 2, 3, 4, 5]));     
