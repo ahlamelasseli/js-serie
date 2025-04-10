@@ -115,4 +115,21 @@ function largestInArray(numbers) {
 }
 largestInArray([5, 12, 8, 21, 7])
 
+function isPrime(number) {
+    if (number <= 1) {
+
+        console.log(number + " is not a prime");
+        return
+    }
+    let i = true
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+            i = false
+        }
+    }
+   
+    i ?  console.log(number + " is a prime ") : console.log(number + " is not a prime ")
+}
+isPrime(1);
+isPrime(2);
 
