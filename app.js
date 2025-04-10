@@ -62,6 +62,20 @@ maxOfTwo(50, 30);
 maxOfTwo(15, 15);
 
 
+  // Exercise 8: Array Sum
+// Create a function called arraySum that takes an array of numbers as a parameter and prints the sum of those numbers to the console. Use the for...of loop. Call the function with different arrays.
+
+function arraySum(numbers) {
+    let sum = 0;
+    for (const num of numbers) {
+      sum += num;
+    }
+    console.log(sum);
+  }
+  
+  arraySum([1, 2, 3, 4, 5]);       
+
+  
 
 
 
