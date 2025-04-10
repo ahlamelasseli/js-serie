@@ -28,4 +28,21 @@ function isEven(number) {
 isEven(6);   
 isEven(9);   
 
-
+//~ Exercise 6: Palindrome Check
+// Create a function called isPalindrome that takes a string as a parameter and prints whether the string is a palindrome (reads the same backward as forward) to the console. Ignore spaces and case. Use loops and conditional statements. Call the function with different strings.
+function isPalindrome(string) {
+    
+    for (let i = 0; i < string.length / 2; i++) {
+      if (string[i] !== string[string.length - 1 - i]) {
+       console.log("not palindrome");
+       return;
+    
+    
+      }
+    }
+    console.log("palindrom");
+    }
+    
+    isPalindrome("something")
+    isPalindrome("radar")
+    
